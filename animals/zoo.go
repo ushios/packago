@@ -14,11 +14,11 @@ func NewZoo(name string) Zoo {
 	return zoo
 }
 
-func (z Zoo) Check(a Animal) {
+func (z Zoo) Check(animal Animal) {
 	switch {
 	default:
 		fmt.Println("...")
-	case a.Type() == "human":
+	case animal.Type() == "human":
 		fmt.Println("You are human. Please show me your ticket.")
 	}
 }
