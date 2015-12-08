@@ -18,3 +18,7 @@ func NewHuman(firstName string, lastName string) Human {
 
 	return human
 }
+
+func (h Human) Type() string {
+	return "human"
+}
