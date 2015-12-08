@@ -1,7 +1,5 @@
 package animals
 
-import "fmt"
-
 type Zoo struct {
 	Name string
 }
@@ -14,11 +12,11 @@ func NewZoo(name string) Zoo {
 	return zoo
 }
 
-func (z Zoo) Check(animal Animal) {
+func (z Zoo) Check(animal Animal) string {
 	switch {
 	default:
-		fmt.Println("...")
+		return "..."
 	case animal.Type() == "human":
-		fmt.Println("You are human. Please show me your ticket.")
+		return "Ticket!"
 	}
 }

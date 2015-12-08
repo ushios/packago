@@ -1,6 +1,9 @@
 package animals
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestZoo(t *testing.T) {
 	uenoZoo := NewZoo("上野動物園")
@@ -9,7 +12,7 @@ func TestZoo(t *testing.T) {
 	cat := NewCat()
 	dog := NewDog()
 
-	uenoZoo.Check(human)
-	uenoZoo.Check(cat)
-	uenoZoo.Check(dog)
+	fmt.Println(uenoZoo.Check(human))
+	fmt.Println(uenoZoo.Check(cat))
+	fmt.Println(uenoZoo.Check(dog))
 }
